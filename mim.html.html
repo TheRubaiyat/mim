@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sanzida Akter Mim – My Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf1f3;--card:#fff;--text:#2a1820;--muted:#7a5a65;--rose:#c93a63;--rose2:#8f1f45;--gold:#c8923a;--line:#f0d6dc;--hero1:#5b1230;--hero2:#9c2a55;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#190d13;--card:#26141c;--text:#f6e6ea;--muted:#c0a0ab;--rose:#ff7a9f;--rose2:#ffb3c7;--line:#43232f;--hero1:#2c0a18;--hero2:#6b1c3d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#190d13;--card:#26141c;--text:#f6e6ea;--muted:#c0a0ab;--rose:#ff7a9f;--rose2:#ffb3c7;--line:#43232f;--hero1:#2c0a18;--hero2:#6b1c3d;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Nunito",system-ui,sans-serif;font-size:17px;line-height:1.7;overflow-x:hidden}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.25;margin:0}
+button{font:inherit;cursor:pointer}
+.hero{min-height:100vh;min-height:100svh;background:radial-gradient(circle at 30% 20%,var(--hero2),var(--hero1) 70%);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;position:relative;overflow:hidden}
+.hero small{color:#f3c6d3;font-size:16px;letter-spacing:.5px}
+.hero h1{font-size:clamp(38px,9vw,84px);margin:10px 0 6px;color:#fff;font-weight:700}
+.heart{font-size:clamp(46px,9vw,80px);display:inline-block;animation:beat 1.6s ease-in-out infinite;filter:drop-shadow(0 6px 18px rgba(0,0,0,.35));cursor:pointer}
+@keyframes beat{0%,100%{transform:scale(1)}14%{transform:scale(1.18)}28%{transform:scale(1)}42%{transform:scale(1.12)}}
+.hero p{max-width:520px;color:#f3d8e0;margin:8px 0 26px}
+.btn{background:#fff;color:var(--rose2);border:0;border-radius:30px;padding:12px 30px;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.btn:hover{transform:translateY(-1px)}
+.sec{max-width:980px;margin:0 auto;padding:60px 20px}
+.sec>h2{font-size:clamp(26px,4vw,36px);text-align:center;color:var(--rose2);margin-bottom:8px}
+.sec>p.sub{text-align:center;color:var(--muted);margin:0 0 30px}
+.count{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 20px;text-align:center}
+.count .big{font-family:"Playfair Display",serif;font-size:clamp(44px,8vw,72px);color:var(--rose);font-weight:700}
+.count input{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;background:var(--bg);color:var(--text);margin:8px 0}
+.count .btn{background:var(--rose);color:#fff;padding:8px 20px;box-shadow:none;margin-left:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.why{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.why .n{font-size:30px}.why h3{font-size:20px;margin:6px 0;color:var(--rose2)}.why p{margin:0;color:var(--muted);font-size:16px}
+.letterbox{text-align:center}
+.letter{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--rose);border-radius:14px;text-align:left;max-height:0;opacity:0;overflow:hidden;padding:0 26px;transition:max-height .7s ease,opacity .5s,padding .5s}
+.letter.open{max-height:1400px;opacity:1;padding:26px;margin-top:20px}
+.letter p{margin:0 0 14px}.sign{text-align:right;font-family:"Playfair Display",serif;color:var(--rose2);font-size:20px;margin:0!important}
+.letterbox .btn{background:var(--rose);color:#fff}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.ph{aspect-ratio:1;border-radius:14px;border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:14px;padding:10px;background:var(--card);cursor:pointer;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+footer{text-align:center;padding:40px 20px;color:var(--muted);border-top:1px solid var(--line)}
+footer b{display:block;font-family:"Playfair Display",serif;color:var(--rose2);font-size:21px;font-weight:500}
+.fl{position:fixed;pointer-events:none;font-size:22px;animation:up 2.2s ease-out forwards;z-index:50}
+@keyframes up{to{transform:translateY(-160px);opacity:0}}
+button:focus-visible,input:focus-visible,.ph:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.heart{animation:none}html{scroll-behavior:auto}.fl{display:none}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <span class="heart" id="heart" aria-hidden="true">❤️</span>
+  <small>For the most special person in my life</small>
+  <h1>Sanzida Akter Mim</h1>
+  <p>This little website is only for you, the one who makes every single day of mine more beautiful.</p>
+  <button class="btn" onclick="document.getElementById('count').scrollIntoView()">Come inside</button>
+</section>
+
+<section class="sec" id="count">
+  <h2>Our Journey Together</h2>
+  <p class="sub">Pick the date we started our life together</p>
+  <div class="count">
+    <div class="big" id="days">—</div>
+    <div>days together</div>
+    <input type="date" id="dt" aria-label="Start date of our journey"> <button class="btn" onclick="saveD()">Show</button>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Six Reasons I Love You</h2>
+  <p class="sub">I could never finish the list, so here are just six</p>
+  <div class="grid">
+    <div class="why"><div class="n">🌅</div><h3>You are my every morning</h3><p>Starting the day with your face makes everything feel easier.</p></div>
+    <div class="why"><div class="n">🤲</div><h3>You stand by me</h3><p>In good times and bad, you are my strength.</p></div>
+    <div class="why"><div class="n">😊</div><h3>Your smile</h3><p>When you smile, all the tiredness of the day disappears.</p></div>
+    <div class="why"><div class="n">🏡</div><h3>You are my home</h3><p>Wherever you are, that is where my home is.</p></div>
+    <div class="why"><div class="n">💬</div><h3>Talking with you</h3><p>Even after hours of talking, I still have more to say.</p></div>
+    <div class="why"><div class="n">🌙</div><h3>You are my peace</h3><p>After every storm, I find my way back to you.</p></div>
+  </div>
+</section>
+
+<section class="sec letterbox">
+  <h2>A Letter For You</h2>
+  <p class="sub">Open it and read, Mim</p>
+  <button class="btn" id="lb" onclick="openL()">Open the letter 💌</button>
+  <div class="letter" id="letter">
+    <p>Dear Mim,</p>
+    <p>I don't always say it out loud, so today I wrote it down. Since you came into my life, everything has become so much more beautiful. Even when you are busy, you think of me and stay by my side, and I will always be grateful for that.</p>
+    <p>I know I'm not perfect. Still, the way you have made me your own is something I will never forget. I want every day ahead of us to be filled with more laughter and love.</p>
+    <p>I love you, today, tomorrow, and for the rest of my life.</p>
+    <p class="sign">Yours always, Hassan Rubaiyat ❤️</p>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Our Memories</h2>
+  <p class="sub">Tap a frame to choose your own photo</p>
+  <div class="photos" id="photos"></div>
+</section>
+
+<footer><b>Sanzida Akter Mim</b>Made with love for you, from Hassan Rubaiyat</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+function load(){let v="";try{v=localStorage.getItem("mimStart")||""}catch(e){}
+ if(v){$("dt").value=v;const d=Math.floor((Date.now()-new Date(v).getTime())/864e5);
+  if(d>=0){$("days").textContent=d.toLocaleString("en-US");return}}
+ $("days").textContent="—"}
+function saveD(){const v=$("dt").value;if(!v)return;try{localStorage.setItem("mimStart",v)}catch(e){}load()}
+function openL(){$("letter").classList.add("open");$("lb").style.display="none";burst(14)}
+function burst(n){for(let i=0;i<n;i++){const h=document.createElement("span");h.className="fl";h.textContent=["❤️","💖","💕","🌹"][i%4];
+ h.style.left=(10+Math.random()*80)+"vw";h.style.top=(55+Math.random()*30)+"vh";h.style.animationDelay=(i*70)+"ms";document.body.appendChild(h);setTimeout(()=>h.remove(),2800)}}
+const ph=$("photos");
+for(let i=0;i<6;i++){const d=document.createElement("label");d.className="ph";d.tabIndex=0;d.innerHTML="📷<br>Add a photo";
+ const f=document.createElement("input");f.type="file";f.accept="image/*";f.hidden=true;
+ f.onchange=()=>{const r=new FileReader();r.onload=()=>{d.innerHTML="";const im=new Image();im.src=r.result;im.alt="A memory";d.style.border="0";d.style.padding="0";d.appendChild(im);d.appendChild(f)};r.readAsDataURL(f.files[0])};
+ d.onkeydown=e=>{if(e.key==="Enter")f.click()};d.appendChild(f);ph.appendChild(d)}
+$("heart").onclick=()=>burst(10);
+load();
+</script>
+</body>
+</html>
